@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+section {
+  background-color: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+/* Estilos para imágenes */
+.perfil-imagen {
+  max-width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Flexbox para hobbies */
+.hobbies-opciones {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Flexbox para series y películas */
+.series-contenedor, 
+.peliculas-contenedor {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.serie-item, 
+.pelicula-item {
+  width: 30%;
+}
+
+.serie-item img, 
+.pelicula-item img {
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.serie-item img:hover,
+.pelicula-item img:hover {
+  transform: scale(1.05);
+}
